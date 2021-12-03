@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir -p patrash/varh patrash/varl patrash/vark
+cd patrash/vark
+echo Serhii Patrash 101 31.11.21 pss3095@gmail.com>Serhii.txt
+echo Serhii Patrash 101 31.11.21 pss3095@gmail.com>Patrash.txt
+cp *.* ../
+var=$(grep -oc '[[:alnum:]+\.\_\-]*@[[:alnum:]+\.\_\-]*' Serhii.txt | sort | uniq -i)
+if [ $var -eq 1 ] ;
+  then 
+     echo "email exist"
+  else 
+     echo "no email"
+  fi
