@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "changes maked"
 echo "number of error messages: "
 grep -c 404 Apache.log
 echo "error messages is: "
