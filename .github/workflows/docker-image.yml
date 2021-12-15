@@ -21,7 +21,6 @@ jobs:
          
     - name: Run script file
       run: |
-        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
          chmod +x ./test.sh
          ./test.sh
       shell: bash
